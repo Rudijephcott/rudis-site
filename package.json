@@ -5,7 +5,7 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build:parcel": "parcel build --public-url ./",
+    "build:parcel": "parcel build --public-url http://clients.harryjatkins.com/rudi",
     "clean": "rm -rf dist/*",
     "build": "npm run clean && npm run build:parcel"
   },
