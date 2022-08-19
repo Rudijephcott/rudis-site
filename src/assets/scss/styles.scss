@@ -140,10 +140,7 @@ body {
 }
 .text-box {
   color: white;
-  padding: 20px;
   max-width: 560px;
-  max-height: 410px;
-  
 }
 .text-box h2 {
   font-size: 32px;
@@ -175,9 +172,8 @@ body {
   padding: 15px;
 
 }
-.playground img{
+.playground img {
   padding-bottom: 24px;
-  padding-right: 4px;
 }
 .footer {
   text-align: center;
@@ -190,3 +186,29 @@ body {
   font-weight: normal;
   color: white;
 }
+
+.media-block {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+
+  &.landscape {
+    aspect-ratio: 16 / 9;
+  }
+
+  &.square {
+    aspect-ratio: 1 / 1;
+  }
+
+  &.portrait {
+    aspect-ratio: 9 / 16;
+  }
+
+  img {
+    /* COVER PARENT DIV AND FILL SPACE */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } 
+}
+
