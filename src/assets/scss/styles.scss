@@ -72,7 +72,6 @@ body {
   background-color: #000249;
 }
 .nav-bar {
-  display: grid;
   width: 100%;
   top: 0;
   left: 0;
@@ -81,12 +80,16 @@ body {
 }
 .nav-bar ul {
   list-style: none;
- 
+  display: flex;
+  justify-content: center;
+  column-gap: 68px;
+  flex-wrap: wrap;
+
+  @media all and (max-width:$breakS){
+    column-gap: 34px;
+  }
 }
-.nav-bar ul li {
-  display: inline-block;
-  padding-left: 68px;
-}
+
 .nav-bar a {
   color: white;
   font-family: 'Fira code';
@@ -107,7 +110,10 @@ body {
 .intro-text {
   text-align: center;
   color: white;
-  padding: 200px;
+  padding: 200px 30px;
+  @media all and (max-width:$breakS){
+    padding: 50px 24px;
+  }
 }
 .intro-text h3 {
   font-family: 'Fira code';
@@ -143,14 +149,23 @@ body {
 }
 .columns {
   padding-bottom: 200px;
+  @media all and (max-width:$breakS){
+    padding-bottom: 80px;
+  }
 }
 .text-box-container {
   display: flex;
   justify-content: flex-end;
+
+  
 }
 .text-box {
   color: white;
   max-width: 560px;
+  
+  @media all and (max-width:$breakS){
+    padding: 24px 0px;
+  }
 }
 .text-box h2 {
   font-size: 32px;
@@ -174,12 +189,14 @@ body {
   
 }
 .text-box a {
+  display: inline-block;
   border: 2px solid #1DCED8;
   color: #1DCED8;
   font-family: 'Fira code';
   font-size: 20px;
   font-weight: 600;
   padding: 15px;
+  margin-top: 40px;
 
 }
 .text-box a:hover {
@@ -230,4 +247,5 @@ body {
     object-fit: cover;
   } 
 }
+
 
