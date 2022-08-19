@@ -63,14 +63,127 @@ $breakSNoUnit: 768;
 }
 
 /* General Styles */
-.text-box {
-  background-color: aquamarine;
-  padding: 20px;
-}
+
 img {
   width: 100%;
   max-width: 100%;
 }
 body {
   background-color: #000249;
+}
+.nav-bar {
+  display: grid;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 50px;
+}
+.nav-bar ul {
+  list-style: none;
+ 
+}
+.nav-bar ul li {
+  display: inline-block;
+  padding-left: 68px;
+}
+.nav-bar a {
+  color: white;
+  font-family: 'Fira code';
+  font-weight: medium;
+  text-decoration: none;
+  font-size: 20px;
+}
+.orange-link a {
+  color: #F6490D;
+  font-weight: bold;
+}
+.intro-text {
+  text-align: center;
+  color: white;
+  padding: 200px;
+}
+.intro-text h3 {
+  font-family: 'Fira code';
+  font-size: 28px;
+  font-style: normal;
+}
+.intro-text h1 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-style: italic;
+  font-size: 60px;
+}
+.intro-text h2 {
+  font-family: 'Fira code';
+  font-size: 28px;
+  font-weight: normal;
+}
+.intro-text-logo {
+  padding-top: 36px;
+}
+.intro-text-logo li {
+  display: inline-block;
+  align-self: center;
+  padding-right: 22px;
+}
+.orange-header-link {
+  color: #F6490D;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Fira code';
+  padding-bottom: 80px;
+}
+.columns {
+  padding-bottom: 200px;
+}
+.text-box {
+  color: white;
+  padding: 20px;
+}
+.text-box h2 {
+  font-size: 32px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-style: italic;
+}
+.text-box h3 {
+  font-family: 'Fira code';
+  font-size: 20px;
+  font-weight: normal;
+  padding-top: 30px;
+}
+.text-box ul {
+  padding-top: 30px;
+  padding-left: 40px;
+  font-family: 'Fira code';
+  font-size: 20px;
+  font-weight: normal;
+  list-style: disc;
+  
+}
+.text-box a {
+  border: 2px solid #1DCED8;
+  color: #1DCED8;
+  font-family: 'Fira code';
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px;
+
+}
+.playground img{
+  padding-bottom: 24px;
+  padding-right: 4px;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+}
+.footer ul li {
+  display: inline-block;
+  font-family: 'Fira code';
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
 }
