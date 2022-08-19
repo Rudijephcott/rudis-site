@@ -8,14 +8,14 @@ $breakS: 768px;
 $breakSNoUnit: 768;
 
 :root {
-  --gutter: 20px;
+  --gutter: 24px;
   --pageMarginTotal: 100px;
   --pageMargin: calc(var(--pageMarginTotal) - (var(--gutter) / 2));
   --easingOut: cubic-bezier(0.16, 1, 0.3, 1);
   --easing: cubic-bezier(0.76, 0, 0.24, 1);
   
   @media all and (max-width: $breakS) {
-    --pageMarginTotal: 20px;
+    --pageMarginTotal: 24px;
   }
 }
 
@@ -94,9 +94,15 @@ body {
   text-decoration: none;
   font-size: 20px;
 }
+.nav-bar a:hover {
+  color: #F6490D;
+}
 .orange-link a {
   color: #F6490D;
   font-weight: bold;
+}
+.orange-link a:hover {
+  color: white;
 }
 .intro-text {
   text-align: center;
@@ -138,6 +144,10 @@ body {
 .columns {
   padding-bottom: 200px;
 }
+.text-box-container {
+  display: flex;
+  justify-content: flex-end;
+}
 .text-box {
   color: white;
   max-width: 560px;
@@ -172,6 +182,10 @@ body {
   padding: 15px;
 
 }
+.text-box a:hover {
+  background-color: white;
+
+}
 .playground img {
   padding-bottom: 24px;
 }
@@ -180,11 +194,16 @@ body {
   padding: 20px;
 }
 .footer ul li {
-  display: inline-block;
   font-family: 'Fira code';
   font-size: 20px;
   font-weight: normal;
   color: white;
+}
+.footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
 }
 
 .media-block {
